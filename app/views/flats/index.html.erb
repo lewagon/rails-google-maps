@@ -18,17 +18,9 @@
         <p>Latitude: <%= flat.latitude %></p>
         <p>Longitude: <%= flat.longitude %></p>
 
-        <%= link_to flat do %>
-          <button class="btn btn-primary">Show</button>
-        <% end %>
-
-        <%= link_to edit_flat_path(flat) do %>
-          <button class="btn btn-primary">Edit</button>
-        <% end %>
-
-        <%= link_to flat, method: :delete, data: { confirm: 'Are you sure?' } do %>
-          <button class="btn btn-primary">Delete</button>
-        <% end %>
+        <%= link_to "Show", flat, class: "btn btn-primary" %>
+        <%= link_to "Edit", edit_flat_path(flat), class: "btn btn-primary" %>
+        <%= link_to "Delete", flat, method: :delete, data: { confirm: 'Are you sure?' } , class: "btn btn-primary" %>
 
       </div>
 

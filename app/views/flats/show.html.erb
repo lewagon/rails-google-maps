@@ -6,14 +6,8 @@
       <p>Latitude: <%= @flat.latitude %></p>
       <p>Longitude: <%= @flat.longitude %></p>
 
-      <%= link_to edit_flat_path(@flat) do %>
-        <button class="btn btn-primary">Edit</button>
-      <% end %>
-
-
-      <%= link_to flats_path do %>
-        <button class="btn btn-primary">Back</button>
-      <% end %>
+      <%= link_to "Edit", edit_flat_path(@flat), class: "btn btn-primary" %>
+      <%= link_to "Back", flats_path, class: "btn btn-primary" %>
     </div>
 
 
