@@ -1,0 +1,40 @@
+<div class="row-fluid">
+  <div class="col-md-6">
+  </div>
+
+  <div class="col-md-6">
+
+    <%= link_to new_flat_path do %>
+      <button class="btn btn-warning">New</button>
+    <% end %>
+
+    <hr>
+
+    <% @flats.each do |flat| %>
+
+      <div class="row-fluid">
+        <h2><%= flat.name %></h2>
+        <p><%= flat.address %></p>
+        <p>Latitude: <%= flat.latitude %></p>
+        <p>Longitude: <%= flat.longitude %></p>
+
+        <%= link_to flat do %>
+          <button class="btn btn-primary">Show</button>
+        <% end %>
+
+        <%= link_to edit_flat_path(flat) do %>
+          <button class="btn btn-primary">Edit</button>
+        <% end %>
+
+        <%= link_to flat, method: :delete, data: { confirm: 'Are you sure?' } do %>
+          <button class="btn btn-primary">Delete</button>
+        <% end %>
+
+      </div>
+
+    <% end %>
+
+
+  </div>
+
+</div>
