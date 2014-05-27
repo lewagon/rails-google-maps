@@ -35,7 +35,7 @@ Then, whenever you create a Flat like `flat = Flat.create(name: "Charming Mansio
 
 To use it you need:
 
-- to have `underscore.js` file in your `assets/javascript`
+- to have `underscore.js` file in your `assets/javascript` take the minified version from [here](https://github.com/jashkenas/underscore/blob/master/underscore-min.js)
 - load this js + gmaps4rails js in `application.js` with
 
 ```
