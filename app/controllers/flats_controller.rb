@@ -37,28 +37,20 @@ class FlatsController < ApplicationController
   def create
     @flat = Flat.new(flat_params)
 
-    respond_to do |format|
-      if @flat.save
-        format.html { redirect_to @flat, notice: 'Flat was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @flat }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @flat.errors, status: :unprocessable_entity }
-      end
+    if @flat.save
+      redirect_to flats_path, notice: 'Flat was successfully created.'
+    else
+      render action: 'new'
     end
   end
 
   # PATCH/PUT /flats/1
   # PATCH/PUT /flats/1.json
   def update
-    respond_to do |format|
-      if @flat.update(flat_params)
-        format.html { redirect_to @flat, notice: 'Flat was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @flat.errors, status: :unprocessable_entity }
-      end
+    if @flat.update(flat_params)
+      redirect_to @flat, notice: 'Flat was successfully updated.'
+    else
+      render action: 'edit'
     end
   end
 

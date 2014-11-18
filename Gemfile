@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
-ruby "2.1.1"
+ruby "2.1.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
@@ -37,6 +38,7 @@ end
 gem "bootstrap-sass"
 gem "geocoder"
 gem "gmaps4rails"
+gem 'rails-assets-underscore'
 
 
 # Use ActiveModel has_secure_password
