@@ -6,8 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Flat.create(name: "Charming Mansion in Montmartre", address: "12, impasse Marie-Blanche")
-Flat.create(name: "Lovely studio Raspail", address: "9, rue d'Odessa")
-Flat.create(name: "Nice Flat. Bonne Nouvelle", address: "18, rue d'Hauteville")
-Flat.create(name: "Awesome House near Buttes-Chaumont", address: "18, rue de l'Atlas")
+Flat.create(name: "Charming Mansion in Montmartre", address: "12, impasse Marie-Blanche, Paris")
+Flat.create(name: "Lovely studio Raspail", address: "9, rue d'Odessa, Paris")
+Flat.create(name: "Nice Flat. Bonne Nouvelle", address: "18, rue d'Hauteville, Paris")
+Flat.create(name: "Awesome House near Buttes-Chaumont", address: "18, rue de l'Atlas, Paris")
 
