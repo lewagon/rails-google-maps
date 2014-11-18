@@ -16,4 +16,4 @@ gem "bootstrap-sass"
 
 gem "geocoder"
 gem "gmaps4rails"
-gem 'rails-assets-underscore'
+gem 'rails-assets-underscore'  # Needs the source 'rails-assets.org' at line 2!
