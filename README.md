@@ -51,8 +51,8 @@ At the bottom of your `app/views/layouts/application.html.erb`, you need this:
 
 ```erb
  <!-- [...] -->
-  <script src="//maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-  <script src="//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js" type="text/javascript"></script>
+  <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+  <script src="https://cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js" type="text/javascript"></script>
 
   <%= javascript_include_tag "application" %>
 
