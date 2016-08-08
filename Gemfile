@@ -1,19 +1,19 @@
-source 'https://rubygems.org'
-source 'https://rails-assets.org'
+source "https://rubygems.org"
 
-ruby "2.2.3"
-gem 'rails', '4.2.3'
-gem 'pg'
+ruby "2.3.1"
+gem "rails", "5.0.0"
+gem "pg"
+gem "puma"
 
-gem 'sass-rails', '~> 4.0.2'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-# gem 'turbolinks'  # Turbolinks with Google Maps is hard
+gem "sass-rails"
+gem "uglifier"
+gem "jquery-rails"
 gem "bootstrap-sass"
+gem "coffee-rails"
 
 gem "geocoder"
 gem "gmaps4rails"
-gem 'rails-assets-underscore'  # Needs the source 'rails-assets.org' at line 2!
 
-gem 'rails_12factor', group: :production
+source "https://rails-assets.org" do
+  gem "rails-assets-underscore"
+end

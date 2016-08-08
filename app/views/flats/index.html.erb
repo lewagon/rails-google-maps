@@ -33,7 +33,7 @@
 </div>
 
 
-<% content_for(:js) do %>
+<% content_for(:after_js) do %>
   <script type="text/javascript">
     $(document).on('ready', function() {
       handler = Gmaps.build('Google');

@@ -1,5 +1,5 @@
 <div class="row-fluid">
-  <div class="col-md-4 col-md-offset-4">
+  <div class="col-md-8 col-md-offset-2">
     <div class="row">
       <h2><%= @flat.name %></h2>
       <p><%= @flat.address %></p>
@@ -14,7 +14,7 @@
     <hr>
 
     <div class="row">
-      <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.fr/maps/ms?ie=UTF8&amp;msa=0&amp;msid=101686375028251599401.0004484f73bea6145ef6b&amp;ll=<%=@flat.latitude%>,<%=@flat.longitude%>&amp;spn=0,0&amp;output=embed&amp;s=AARTsJqhzeyiqiLGEqDCDC7ar_q7Q1nmAw"></iframe>
+      <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?center=#{@flat.latitude},#{@flat.longitude}&zoom=14&size=640x400&markers=color:black%7C#{@flat.latitude},#{@flat.longitude}" %>
     </div>
 
   </div>
