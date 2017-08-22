@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MapsExample</title>
+  <title>Dynamic Google Maps</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= csrf_meta_tags %>
 </head>
@@ -10,7 +10,6 @@
   <div class="container-fluid">
     <%= yield %>
   </div>
-
 
   <%= javascript_include_tag "https://maps.google.com/maps/api/js?key=AIzaSyDANjx3bosEtIyzJaoWs50Wnt6nt_1rmxU" %>
   <%= javascript_include_tag "https://cdn.rawgit.com/printercu/google-maps-utility-library-v3-read-only/master/markerclusterer/src/markerclusterer_compiled.js" %>
