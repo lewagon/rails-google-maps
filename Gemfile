@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.5.1"
+ruby "2.6.6"
 gem "rails", "5.0.5"
 gem "pg"
 gem "puma"
